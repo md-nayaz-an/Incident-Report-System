@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "63ad2e2bdd998dc5428753b9"
+  },
+  "username": "John Hanster",
+  "password": "1234",
+  "id": 5555,
+  "role": "user"
+},{
+  "_id": {
+    "$oid": "63ae754b454f851e841cb918"
+  },
+  "id": 6666,
+  "username": "Silverston",
+  "password": "1234",
+  "role": "user"
+},{
+  "_id": {
+    "$oid": "63ae7552454f851e841cb919"
+  },
+  "id": 7777,
+  "username": "Rahul",
+  "password": "1234",
+  "role": "user"
+},{
+  "_id": {
+    "$oid": "63ae7558454f851e841cb91a"
+  },
+  "id": 8888,
+  "username": "Abel",
+  "password": "1234",
+  "role": "user"
+},{
+  "_id": {
+    "$oid": "63ae755d454f851e841cb91b"
+  },
+  "id": 3456,
+  "username": "Tesfaye",
+  "password": "1234",
+  "role": "admin"
+},{
+  "_id": {
+    "$oid": "63ae7564454f851e841cb91c"
+  },
+  "id": 2324,
+  "username": "William",
+  "password": "1234",
+  "role": "admin"
+}]
