@@ -34,7 +34,7 @@ const LoginPage = () => {
       );
     let result = await response.json();
     */
-    result = { username: 'abel',password: 1234 }
+    result = {id: 8888, username: 'abel',password: 1234 }
     
     if(result.password === password){
       setErr({
