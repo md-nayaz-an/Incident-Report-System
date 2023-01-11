@@ -28,11 +28,13 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   async function onLogin() {
-    const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+    /*const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
     const response = await fetch(
       `${url}/login?userid=${userid}`,
       );
     let result = await response.json();
+    */
+    result = { password: 1234 }
     
     if(result.password === password){
       setErr({
