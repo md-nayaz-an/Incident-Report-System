@@ -35,7 +35,7 @@ export default function Triggered() {
   const [rows, setRows] = useState([]);
   useEffect(() => {
     async function getRows() {
-      const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+      const url = `${process.env.REACT_APP_SERVER_URL}`;
       const response = await fetch(
         `${url}/incident?status=Triggered`,
         );
@@ -138,7 +138,7 @@ function InputComp(props) {
 
   useEffect(() => {
     async function getSeq() {
-      const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+      const url = `${process.env.REACT_APP_SERVER_URL}`;
       const response = await fetch(
         `${url}/sequence`,
         );
@@ -154,7 +154,7 @@ function InputComp(props) {
   async function onSubmit(e) {
     e.preventDefault();
     props.onChanged(!props.changed);
-    const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+    const url = `${process.env.REACT_APP_SERVER_URL}`;
       await fetch(`${url}/incident/add`,{
         method: "POST",
         headers: {
@@ -165,7 +165,7 @@ function InputComp(props) {
     }
     
   async function getUserDetails() {
-    const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+    const url = `${process.env.REACT_APP_SERVER_URL}`;
     const response = await fetch(
       `${url}/userdetails`,
       );

@@ -24,7 +24,7 @@ export default function Incidents() {
   const [rows, setRows] = useState([]);
   useEffect(() => {
     async function getRows() {
-      const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+      const url = `${process.env.REACT_APP_SERVER_URL}`;
       const response = await fetch(
         `${url}/incident`,
         );

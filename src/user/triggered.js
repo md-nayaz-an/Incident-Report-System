@@ -25,7 +25,7 @@ export default function Triggered(props) {
   const [rows, setRows] = useState([]);
   useEffect(() => {
     async function getRows() {
-      const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+      const url = `${process.env.REACT_APP_SERVER_URL}`;
       const response = await fetch(
         `${url}/incident?userid=${props.userid}&status=Triggered`,
         );
@@ -39,7 +39,7 @@ export default function Triggered(props) {
   }, [changed, props.userid]);
 
   async function onAccept(userid){
-    const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+    const url = `${process.env.REACT_APP_SERVER_URL}`;
     const response = await fetch(
       `${url}/update/status?id=${userid}&status=Acknowledged`,
       );

@@ -36,7 +36,7 @@ export default function Acknowledged(props) {
 
   useEffect(() => {
     async function getRows() {
-      const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+      const url = `${process.env.REACT_APP_SERVER_URL}`;
       const response = await fetch(
         `${url}/incident?userid=${props.userid}&status=Acknowledged`,
         );
@@ -54,7 +54,7 @@ export default function Acknowledged(props) {
   };
 
   const handleClick = async(userid) => {
-    const url = `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}`;
+    const url = `${process.env.REACT_APP_SERVER_URL}`;
     const response = await fetch(
       `${url}/update/status?id=${userid}&status=Resolved&date=${date.format('DD MMM YYYY')}`,
       );
